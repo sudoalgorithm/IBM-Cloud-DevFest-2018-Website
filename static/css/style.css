@@ -1,0 +1,158 @@
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#section-one{
+    width: 100%;
+    height: 100vh;
+}
+
+#section-two{
+    padding: 0;
+    margin: 0;
+    background: #1a1e24;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Fira Mono', monospace;
+}
+
+#section-three{
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#section-four{
+    width: 100%;
+    height: 65vh;
+}
+
+#section-six{
+    width: 100%;
+    background: #1a1e24;
+}
+
+#devfest-main{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+#ibm-logo{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mlh-logo{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#astrolabs-logo{
+    width: 15%;
+    height: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe{
+    width: 100%;
+    height: 65vh;
+    border: 0
+}
+
+#card-web{
+    height: 40%;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-photos {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column-photos img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column-photos {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column-photos {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+#section-six h1{
+    color: #FFFFFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1{
+    font-size: 250%;
+    margin-bottom: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+p{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#btn-override{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    padding: 20px;
+}
+
+
+
+
