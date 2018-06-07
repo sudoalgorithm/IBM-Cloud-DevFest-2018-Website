@@ -138,11 +138,14 @@ p{
 #section-seven{
     background: #1a1e24;
     width: 100%;
-    height: 50vh;
     color: #FFFFFF;
 }
 
 .label{
+    color: #FFFFFF;
+}
+
+.label :hover{
     color: #FFFFFF;
 }
 
