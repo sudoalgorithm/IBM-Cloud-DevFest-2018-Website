@@ -85,16 +85,15 @@ iframe{
 }
 
 .row {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column-photos {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%;
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
@@ -105,7 +104,6 @@ iframe{
     vertical-align: middle;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .column-photos {
         -ms-flex: 50%;
@@ -114,7 +112,6 @@ iframe{
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column-photos {
         -ms-flex: 100%;
