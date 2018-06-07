@@ -1,4 +1,5 @@
-from flask import Flask, render_template, jsonify, request, url_for
+from flask import Flask, render_template, jsonify, request, url_for, redirect
+import requests
 import os
 
 app = Flask(__name__)
@@ -7,6 +8,17 @@ app = Flask(__name__)
 @app.route('/index')
 def index():
     return render_template('index.html')
+
+@app.route('/register', methods=['GET','POST'])
+def register():
+    fullname = request.form['fullname']
+    email = request.form['email']
+    docJson = {}
+    url = ''
+    response = requests.post(url, data=docJson)
+    response.text
+    return redirect(url_for('fa'))
+
 
 @app.after_request
 def set_response_headers(response):
