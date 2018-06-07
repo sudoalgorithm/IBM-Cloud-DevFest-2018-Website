@@ -41,9 +41,21 @@
     height: 65vh;
 }
 
+iframe{
+    width: 100%;
+    height: 65vh;
+    border: 0
+}
+
 #section-six{
     width: 100%;
     background: #1a1e24;
+}
+
+#section-seven{
+    background: #1a1e24;
+    width: 100%;
+    color: #FFFFFF;
 }
 
 #devfest-main{
@@ -78,11 +90,7 @@
     margin-right: auto;
 }
 
-iframe{
-    width: 100%;
-    height: 65vh;
-    border: 0
-}
+
 
 .row {
     display: -ms-flexbox;
@@ -104,22 +112,6 @@ iframe{
     vertical-align: middle;
 }
 
-@media screen and (max-width: 800px) {
-    .column-photos {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .column-photos {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
 #section-six h1{
     color: #FFFFFF;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -135,20 +127,34 @@ p{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-#section-seven{
-    background: #1a1e24;
-    width: 100%;
-    color: #FFFFFF;
-}
-
 .label{
     color: #FFFFFF;
 }
 
-.label :hover{
+.checkbox:hover, .radio:hover{
     color: #FFFFFF;
 }
 
+.track-checkbox{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .column-photos {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column-photos {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
 
 
