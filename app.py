@@ -36,7 +36,7 @@ elif os.path.isfile('vcap-local.json'):
 def index():
     return render_template('index.html')
 
-
+'''
 @app.route('/register', methods=['GET','POST'])
 def register():
     fullname = request.form['fullname']
@@ -46,7 +46,7 @@ def register():
     response = requests.post(url, data=docJson)
     response.text
     return redirect(url_for('fa'))
-
+'''
 
 @app.after_request
 def set_response_headers(response):
