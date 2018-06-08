@@ -595,7 +595,7 @@
                 <div class="column" style="padding: 130px 0;">
                     <div class="field">
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input" type="text" placeholder="Full Name" value="" name="fullname">
+                            <input  id="full-name" class="input" type="text" placeholder="Full Name" value="">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -603,7 +603,7 @@
                     </div>
                     <div class="field">
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input" type="email" placeholder="Email input" value="" name="email">
+                            <input id="email-address" class="input" type="email" placeholder="Email input" value="">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
@@ -613,11 +613,11 @@
                         <label class="label">Which Track Do You Prefer</label>
                         <div class="control">
                             <label class="checkbox">
-                                <input type="checkbox" class="track-checkbox">Blockchain
-                                <input type="checkbox" class="track-checkbox">Data Science
-                                <input type="checkbox" class="track-checkbox">Mobile
-                                <input type="checkbox" class="track-checkbox">DevOps
-                                <input type="checkbox" class="track-checkbox">Web
+                                <input name="selector[]" type="checkbox" class="track-checkbox" value="blockchain">Blockchain
+                                <input name="selector[]" type="checkbox" class="track-checkbox" value="datascience">Data Science
+                                <input name="selector[]" type="checkbox" class="track-checkbox" value="mobile">Mobile
+                                <input name="selector[]" type="checkbox" class="track-checkbox" value="devops">DevOps
+                                <input name="selector[]" type="checkbox" class="track-checkbox" value="web">Web
                             </label>
                         </div>
                     </div>
@@ -625,7 +625,7 @@
                         <label class="label">Programming Language You Prefer</label>
                         <div class="control">
                             <div class="select">
-                                <select>
+                                <select id="language">
                                     <option>Javascript</option>
                                     <option>Java</option>
                                     <option>Python</option>
@@ -641,12 +641,12 @@
                     <div class="field">
                         <div class="control">
                             <label class="checkbox">
-                                <input type="checkbox" class="track-checkbox">I agree to receive relevant updates regarding this event.
+                                <input id="disclaimer" type="checkbox" class="track-checkbox">I agree to receive relevant updates regarding this event.
                             </label>
                         </div>
                     </div>
                     <div class="control">
-                        <button class="button is-link">Submit</button>
+                        <button class="button is-link" id="register-user">Register</button>
                     </div>
                 </div>
             </div>
@@ -674,8 +674,10 @@
             <br>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/particles.js') }}"></script>
     <script src="{{ url_for('static', filename='js/termynal.min.js') }}" data-termynal-container="#termynal"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/register.js') }}"></script>
 </body>
 </html>
