@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kunal Malhotra">
+    <title>DevFest 2018 - Registration Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style-registration.css') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='favicon.ico')}}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico')}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico')}}" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+
+</head>
+<body>
+    <div id="section-one">
+        <div class="container">
+            <img id="devfest-main" src="{{ url_for('static', filename='logos/devfest-main.png') }}">
+                <div class="card" id="card-registation">
+                    <div class="card-content">
+                    <p class="has-text-centered">Thanks for Registration to DevFest 2018. We hereby confirm your registation.</p>
+                    <p class="has-text-centered">We will send you an email soon with all the necessary details you would like to have before DevFest.</p>
+                    <p class="has-text-centered">Looking forward to see you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

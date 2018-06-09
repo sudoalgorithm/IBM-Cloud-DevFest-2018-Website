@@ -1,7 +1,6 @@
-from flask import Flask, render_template, jsonify, request, url_for, redirect
-import requests
-import os
+from flask import Flask, render_template, request, jsonify, url_for, redirect
 from cloudant import Cloudant
+import os
 import json
 
 app = Flask(__name__)
@@ -44,13 +43,32 @@ def set_response_headers(response):
 def index():
     return render_template('index.html')
 
-@app.route('/api/register', methods=['GET'])
+@app.route('/registration')
 def register():
+    return render_template('registration_complete.html')
+
+@app.route('/api/register', methods=['POST'])
+def put_register():
+    fullname = request.json['fullname']
+    emailaddress = request.json['emailaddress']
+    trackArray = request.json['trackArray']
+    language = request.json['language']
+    disclaimer = request.json['disclaimer']
+    data = {
+            'fullname':fullname,
+            'emailaddress':emailaddress,
+            'trackArray':trackArray,
+            'language':language,
+            'disclaimer':disclaimer
+            }
     if client:
-        return jsonify(list(map(lambda doc: doc['name'], db)))
+        my_document = db.create_document(data)
+        data['_id'] = my_document['_id']
+        return jsonify(data)
     else:
         print('No database')
-        return jsonify([])
+        return jsonify(data)
+    return redirect(url_for('register'))
 
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0', port=8080)

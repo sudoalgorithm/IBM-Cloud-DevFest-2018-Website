@@ -11,7 +11,7 @@ $(document).ready(function(){
         if (fullname.length > 0 && emailaddress.length > 0 && trackArray.length > 0){
             $.ajax({
                 method: "POST",
-                url: "./api/register",
+                url: "/api/register",
                 contentType: "application/json",
                 cache: false,
                 data: JSON.stringify({
@@ -20,14 +20,14 @@ $(document).ready(function(){
                     trackArray: trackArray,
                     language: language,
                     disclaimer: disclaimer
-                })
-                .done(function(data){
-                    fullname.val() = null;
-                    emailaddress.val() = null;
-                    trackArray.val() = null;
-                    language.val() = null;
-                    disclaimer.val() = null;
-                })
+                }),
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+
             })
         }else{
             alert("Please Enter All Required Infromation");

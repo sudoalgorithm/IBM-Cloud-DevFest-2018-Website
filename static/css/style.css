@@ -27,7 +27,7 @@
     justify-content: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Fira Mono', monospace;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 #section-three{
@@ -115,6 +115,10 @@ iframe{
 #section-six h1{
     color: #FFFFFF;
     font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#section-seven h1{
+    font-family: 230%;
 }
 
 h1{
