@@ -144,6 +144,14 @@ p{
     margin-right: 10px;
 }
 
+#section-seven-left{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 @media screen and (max-width: 800px) {
     .column-photos {
         -ms-flex: 50%;
