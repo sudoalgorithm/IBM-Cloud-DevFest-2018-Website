@@ -21,8 +21,8 @@ $(document).ready(function(){
                     language: language,
                     disclaimer: disclaimer
                 }),
-                success: function(response) {
-                    console.log(response);
+                success: function() {
+                    window.location.href = "/registration";
                 },
                 error: function(error) {
                     console.log(error);

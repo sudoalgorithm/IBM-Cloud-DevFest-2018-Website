@@ -47,31 +47,27 @@ def index():
 def register():
     return render_template('registration_complete.html')
 
-@app.route('/api/register', methods=['GET','POST'])
+@app.route('/api/register', methods=['POST'])
 def put_register():
-    if request.method == "POST":
-        fullname = request.json['fullname']
-        emailaddress = request.json['emailaddress']
-        trackArray = request.json['trackArray']
-        language = request.json['language']
-        disclaimer = request.json['disclaimer']
-        data = {
-                'fullname':fullname,
-                'emailaddress':emailaddress,
-                'trackArray':trackArray,
-                'language':language,
-                'disclaimer':disclaimer
-                }
-        if client:
-            my_document = db.create_document(data)
-            data['_id'] = my_document['_id']
-            jsonify(data)
-            return redirect(url_for('register'))
-        else:
-            print('No database')
-            return jsonify(data)
+    fullname = request.json['fullname']
+    emailaddress = request.json['emailaddress']
+    trackArray = request.json['trackArray']
+    language = request.json['language']
+    disclaimer = request.json['disclaimer']
+    data = {
+            'fullname':fullname,
+            'emailaddress':emailaddress,
+            'trackArray':trackArray,
+            'language':language,
+            'disclaimer':disclaimer
+            }
+    if client:
+        my_document = db.create_document(data)
+        data['_id'] = my_document['_id']
+        return jsonify(data)
     else:
-        return render_template("index.html")
+        print('No database')
+        return jsonify(data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(debug=True,host='0.0.0.0', port=8080)
