@@ -75,7 +75,7 @@ def put_register():
         my_document = db.create_document(data)
         data['_id'] = my_document['_id']
 
-        msg = Message('See you at: DevFest 2018', sender='testno630@gmail.com', recipients=[emailaddress])
+        msg = Message('See you at: DevFest 2018', sender='testno631@gmail.com', recipients=[emailaddress])
         
         msg.body=render_template('mailtext.txt')
         msg.html=render_template('mailtext.html')
