@@ -633,16 +633,19 @@
                         <div class="control">
                             <div class="select">
                                 <select id="language">
-                                    <option>Javascript</option>
-                                    <option>Java</option>
-                                    <option>Python</option>
-                                    <option>Ruby</option>
-                                    <option>Go</option>
-                                    <option>C#</option>
-                                    <option>Swift</option>
-                                    <option>Other</option>
+                                    <option value="Select">Select</option>
+                                    <option value="Javascript">Javascript</option>
+                                    <option value="Java">Java</option>
+                                    <option value="Python">Python</option>
+                                    <option value="Ruby">Ruby</option>
+                                    <option value="Go">Go</option>
+                                    <option value="C#">C#</option>
+                                    <option value="Swift">Swift</option>
+                                    <option value="Other">Other</option>
                                 </select>
-                            </div>
+                                
+                               </div>
+                               <input  id="other" class="input" type="text" placeholder="Programming Language" value="" style="width:50%">
                         </div>
                     </div>
                     <div class="field">
@@ -686,5 +689,7 @@
     <script src="{{ url_for('static', filename='js/termynal.min.js') }}" data-termynal-container="#termynal"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/register.js') }}"></script>
+    <script type="text/javascript"" src="{{ url_for('static', filename='js/other.js') }}"></script>
+</script>   
 </body>
 </html>
