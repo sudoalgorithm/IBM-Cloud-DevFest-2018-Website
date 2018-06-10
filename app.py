@@ -3,7 +3,17 @@ from cloudant import Cloudant
 import os
 import json
 
+import atexit
+
+from flask_mail import Mail, Message
+
 app = Flask(__name__)
+
+# Load configuration from file
+app.config.from_pyfile('config.cfg')
+
+# instantiate mail part
+mail = Mail(app)
 
 db_name = 'devfestregistration'
 client = None
@@ -64,10 +74,26 @@ def put_register():
     if client:
         my_document = db.create_document(data)
         data['_id'] = my_document['_id']
+
+        msg = Message('See you at: DevFest 2018', sender='rosewhitemh@gmail.com', recipients=[emailaddress])
+        
+        msg.body=render_template('mailtext.txt')
+        msg.html=render_template('mailtext.html')
+        with app.open_resource("DevFest.ics") as fp:
+            msg.attach("DevFest.ics", "text/calendar", fp.read())
+
+        mail.send(msg)
+
         return jsonify(data)
     else:
         print('No database')
         return jsonify(data)
+    return "Registration Failed"
+
+@atexit.register
+def shutdown():
+    if client:
+        client.disconnect()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
