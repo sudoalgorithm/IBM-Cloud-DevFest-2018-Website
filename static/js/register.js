@@ -7,8 +7,22 @@ $(document).ready(function(){
             trackArray[i] = $(this).val();
         });
         var language = $('#language :selected').text();
+        if (language === "Other"){
+            language = $('#other').val();
+        }
         var disclaimer = $('#disclaimer').val();
-        if (fullname.length > 0 && emailaddress.length > 0 && trackArray.length > 0){
+                if (fullname.length > 0 && emailaddress.length > 0){
+            if (trackArray.length == 0){
+                alert("Please select atleast 1 developer track of interest");
+            }
+
+            if (language === "Select"){
+                alert("Kindly select your programming language of preference");
+            }
+
+            if ($('#disclaimer:checkbox:checked').length == 0){
+                alert("You need to agree to receiving event related updates to register");
+            }
             $.ajax({
                 method: "POST",
                 url: "/api/register",
