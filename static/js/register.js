@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#register-user').click(function(){
         // Regular Expression for Name and Email checking.
-        var regexname = /^[a-zA-Z]+$/;
+        var regexname = /^[a-zA-Z].*[\s\.]*$/g;
         var regexemail = /^\w+([-+.'][^\s]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
         var fullname = $('#full-name').val();
