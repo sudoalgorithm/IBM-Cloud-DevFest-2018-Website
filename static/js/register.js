@@ -8,7 +8,7 @@ $(document).ready(function(){
         });
         var language = $('#language :selected').text();
         if (language === "Other"){
-            language = $('#other').val();
+            language = $('#other').val(); 
         }
         var disclaimer = $('#disclaimer').val();
                 if (fullname.length > 0 && emailaddress.length > 0){
