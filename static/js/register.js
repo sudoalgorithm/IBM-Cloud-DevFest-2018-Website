@@ -44,7 +44,7 @@ $(document).ready(function(){
 
             })
         }else{
-            alert("Please Enter All Required Infromation");
+            alert("Please Enter All Required Information");
         }
     });
 });
