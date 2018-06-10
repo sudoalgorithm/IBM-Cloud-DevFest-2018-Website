@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, jsonify, url_for, redirect
 from cloudant import Cloudant
+from flask_mail import Mail, Message
 import os
 import json
-
 import atexit
-
-from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
@@ -77,7 +75,7 @@ def put_register():
         data['_id'] = my_document['_id']
         # Send email and calendar invite
         msg = Message('See you at: DevFest 2018', sender='testno631@gmail.com', recipients=[emailaddress])
-        
+
         msg.body=render_template('mailtext.txt')
         msg.html=render_template('mailtext.html')
         with app.open_resource("DevFest2018.ics") as fp:
@@ -97,4 +95,4 @@ def shutdown():
         client.disconnect()
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(debug=True,host='0.0.0.0', port=8080)
