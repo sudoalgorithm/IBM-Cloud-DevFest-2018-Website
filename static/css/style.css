@@ -152,6 +152,14 @@ p{
     bottom: 0;
 }
 
+.card-header-override{
+    background: #1a1e24;
+}
+
+.card-header-title-override{
+    color: #FFFFFF;
+}
+
 @media screen and (max-width: 800px) {
     .column-photos {
         -ms-flex: 50%;
