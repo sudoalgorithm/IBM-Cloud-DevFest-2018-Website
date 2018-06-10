@@ -75,14 +75,11 @@ def put_register():
         data['_id'] = my_document['_id']
         # Send email and calendar invite
         msg = Message('See you at: DevFest 2018', sender='testno631@gmail.com', recipients=[emailaddress])
-
         msg.body=render_template('mailtext.txt')
         msg.html=render_template('mailtext.html')
         with app.open_resource("DevFest2018.ics") as fp:
             msg.attach("DevFest2018.ics", "text/calendar", fp.read())
-
         mail.send(msg)
-
         return jsonify(data)
     else:
         print('No database')
