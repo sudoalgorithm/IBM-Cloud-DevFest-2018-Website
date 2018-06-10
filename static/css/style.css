@@ -160,6 +160,12 @@ p{
     color: #FFFFFF;
 }
 
+.header-location{
+    color: #FFFFFF;
+    padding: 5px;
+
+}
+
 @media screen and (max-width: 800px) {
     .column-photos {
         -ms-flex: 50%;
