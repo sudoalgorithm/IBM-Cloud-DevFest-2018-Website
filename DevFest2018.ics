@@ -15,17 +15,17 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20180610T043751Z
-UID:20180610T043751Z-524902821@marudot.com
-DTSTART;TZID="Asia/Dubai":20180629T090000
-DTEND;TZID="Asia/Dubai":20180630T180000
-SUMMARY:DevFest
+DTSTAMP:20180611T125107Z
+UID:20180611T125107Z-786409648@marudot.com
+DTSTART;TZID="Asia/Dubai":20180629T083000
+DTEND;TZID="Asia/Dubai":20180630T200000
+SUMMARY:IBM Cloud DevFest 2018
 DESCRIPTION:IBM Cloud DevFest is a large\, developer event happening in Dubai\, UAE focused on community building and learning about IBM technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community that hosts it. DevFest is powered by a shared belief that when developers come together to exchange ideas\, amazing things can happen.
 LOCATION:AstroLabs Dubai\, Parkside Retail Level Cluster R\, JLT - Dubai
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:DevFest
+DESCRIPTION:IBM Cloud DevFest 2018
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
