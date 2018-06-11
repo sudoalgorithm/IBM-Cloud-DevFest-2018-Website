@@ -23,38 +23,39 @@ $(document).ready(function(){
             if (regexname.test(fullname) === false){
                 alert("Please enter a valid Name");
             }
-            if (regexemail.test(emailaddress) === false){
+            else if (regexemail.test(emailaddress) === false){
                 alert("Please enter a valid Email Address");
             }
-            if (trackArray.length == 0){
+            else if (trackArray.length == 0){
                 alert("Please select atleast 1 developer track of interest");
             }
-            if (language === "Select"){
+            else if (language === "Select"){
                 alert("Kindly select your programming language of preference");
             }
-            if ($('#disclaimer:checkbox:checked').length == 0){
+            else if ($('#disclaimer:checkbox:checked').length == 0){
                 alert("You need to agree to receiving event related updates to register");
             }
-            $.ajax({
-                method: "POST",
-                url: "/api/register",
-                contentType: "application/json",
-                cache: false,
-                data: JSON.stringify({
-                    fullname: fullname,
-                    emailaddress: emailaddress,
-                    trackArray: trackArray,
-                    language: language,
-                    disclaimer: disclaimer
-                }),
-                success: function() {
-                    window.location.href = "/registration";
-                },
-                error: function(error) {
-                    console.log(error);
-                }
-
-            })
+            else{
+                $.ajax({
+                    method: "POST",
+                    url: "/api/register",
+                    contentType: "application/json",
+                    cache: false,
+                    data: JSON.stringify({
+                        fullname: fullname,
+                        emailaddress: emailaddress,
+                        trackArray: trackArray,
+                        language: language,
+                        disclaimer: disclaimer
+                    }),
+                    success: function() {
+                        window.location.href = "/registration";
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+               })
+            }
         }else{
             alert("Please Enter All Required Information");
         }
