@@ -97,19 +97,21 @@ iframe{
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 2px;
 }
 
 .column-photos {
     -ms-flex: 25%;
     flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    max-width: 20%;
+    padding: 0 10px;
 }
 
 .column-photos img {
     margin-top: 8px;
     vertical-align: middle;
+    width:80%;
+    height:80%;
 }
 
 #section-six h1{
