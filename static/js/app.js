@@ -17,3 +17,5 @@ var terminalTyped = new Typed("#terminalType", {
     }
   });
 
+
+
