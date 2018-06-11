@@ -90,30 +90,6 @@ iframe{
     margin-right: auto;
 }
 
-
-
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0 2px;
-}
-
-.column-photos {
-    -ms-flex: 25%;
-    flex: 25%;
-    max-width: 20%;
-    padding: 0 10px;
-}
-
-.column-photos img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width:80%;
-    height:80%;
-}
-
 #section-six h1{
     color: #FFFFFF;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -131,6 +107,7 @@ h1{
 
 p{
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 120%;
 }
 
 .label{
@@ -168,6 +145,18 @@ p{
 
 }
 
+.speaker-images{
+    width: 70%;
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.speaker-designation{
+    font-size: 100%;
+}
+
 @media screen and (max-width: 800px) {
     .column-photos {
         -ms-flex: 50%;
@@ -183,6 +172,8 @@ p{
         max-width: 100%;
     }
 }
+
+
 
 
 
