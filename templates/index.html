@@ -229,7 +229,7 @@
                                 <p>Data Science and Machine Learning Pipeline</p>
                             </div>
                             <div class="column">
-                                <div class="has-text-centered">Beginner</div>
+                                <p class="has-text-centered">Beginner</p>
                             </div>
                             <div class="column">
                                 <p class="has-text-centered">TECH TALK</p>
@@ -243,7 +243,7 @@
                                 <p>Data Engineering with Pandas on Watson Studio</p>
                             </div>
                             <div class="column">
-                                <div class="has-text-centered">Beginner</div>
+                                <p class="has-text-centered">Beginner</p>
                             </div>
                             <div class="column">
                                 <p class="has-text-centered">CODE LABS</p>
@@ -271,8 +271,8 @@
                                 <p>TBA</p>
                             </div>
                             <div class="column">
-                                <div class="has-text-centered">TBA</div>
-                            </div>
+                                <p class="has-text-centered">TBA</div>
+                            </p>
                             <div class="column">
                                 <p class="has-text-centered">TECH TALK</p>
                             </div>
@@ -285,7 +285,7 @@
                                 <p>A gentle introduction to Deep Learning with Tensorflow</p>
                             </div>
                             <div class="column">
-                                <div class="has-text-centered">Intermediate</div>
+                                <p class="has-text-centered">Intermediate</p>
                             </div>
                             <div class="column">
                                 <p class="has-text-centered">TECH TALK</p>
@@ -299,7 +299,7 @@
                                 <p>Building AppleFace ID App with Tenserflow</p>
                             </div>
                             <div class="column">
-                                <div class="has-text-centered">Intermediate</div>
+                                <p class="has-text-centered">Intermediate</p>
                             </div>
                             <div class="column">
                                 <p class="has-text-centered">CODE LABS</p>
@@ -383,7 +383,7 @@
                                 <p>Data Binding in Android</p>
                             </div>
                             <div class="column">
-                                <div class="has-text-centered">Beginner</div>
+                                <p class="has-text-centered">Beginner</p>
                             </div>
                             <div class="column">
                                 <p class="has-text-centered">CODE LABS</p>
@@ -411,7 +411,7 @@
                                 <p>Lunch</p>
                             </div>
                             <div class="column">
-                                <div class="has-text-centered"></div>
+                                <p class="has-text-centered"></p>
                             </div>
                             <div class="column">
                                 <p class="has-text-centered"></p>
@@ -680,7 +680,7 @@
                     </div>
                     <div class="field">
                         <div class="control has-icons-left has-icons-right">
-                            <input id="email-address" class="input" type="email" placeholder="Email input" value="">
+                            <input id="email-address" class="input" type="email" placeholder="Email Address" value="">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
@@ -717,6 +717,15 @@
                         </div>
                     </div>
                     <div class="field">
+                        <label class="label">If you would like us to confim your attendance before the event, please enter your mobile number below</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="mobile-number" class="input" type="text" placeholder="+971 50 123 4567" value="">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-mobile"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
                         <div class="control">
                             <label class="checkbox">
                                 <input id="disclaimer" type="checkbox" class="track-checkbox">I agree to receive relevant updates regarding this event.
@@ -739,15 +748,15 @@
             <br>
             <div class="columns">
                 <div class="column">
-                    <img id="ibm-logo" src="{{ url_for('static', filename='logos/ibmneg_white.png') }}">
+                    <img href="http://developer.ibm.com/code/" id="ibm-logo" src="{{ url_for('static', filename='logos/ibmneg_white.png') }}">
                 </div>
                 <div class="column">
-                    <img id="mlh-logo" src="{{ url_for('static', filename='logos/mlh-logo-color.png') }}">
+                    <img href="https://mlh.io/" id="mlh-logo" src="{{ url_for('static', filename='logos/mlh-logo-color.png') }}">
                 </div>
             </div>
             <br>
             <br>
-            <img id="astrolabs-logo" src="{{ url_for('static', filename='logos/astrolab-logo.png') }}">
+            <img href="https://astrolabs.com/" id="astrolabs-logo" src="{{ url_for('static', filename='logos/astrolab-logo.png') }}">
             <br>
             <br>
         </div>
