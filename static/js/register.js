@@ -17,6 +17,8 @@ $(document).ready(function(){
             language = $('#other').val();
         }
 
+        var mobilenumber = $('#mobile-number').val();
+
         var disclaimer = $('#disclaimer').val();
 
         if (fullname.length > 0 && emailaddress.length > 0){
@@ -26,13 +28,13 @@ $(document).ready(function(){
             else if (regexemail.test(emailaddress) === false){
                 alert("Please enter a valid Email Address");
             }
-            else if (trackArray.length == 0){
+            else if (trackArray.length === 0 || trackArray.length === 1 && trackArray.includes("on")){
                 alert("Please select atleast 1 developer track of interest");
             }
             else if (language === "Select"){
                 alert("Kindly select your programming language of preference");
             }
-            else if ($('#disclaimer:checkbox:checked').length == 0){
+            else if ($('#disclaimer:checkbox:checked').length === 0){
                 alert("You need to agree to receiving event related updates to register");
             }
             else{
@@ -46,6 +48,7 @@ $(document).ready(function(){
                         emailaddress: emailaddress,
                         trackArray: trackArray,
                         language: language,
+                        mobilenumber: mobilenumber,
                         disclaimer: disclaimer
                     }),
                     success: function() {
