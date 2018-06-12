@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kunal Malhotra">
+    <meta name="description" content="IBM Cloud DevFest is a large, developer event happening in Dubai, UAE focused on community building and learning about IBM technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community that hosts it. DevFest is powered by a shared belief that when developers come together to exchange ideas, amazing things can happen.">
+    <meta name="keywords" content="devfest, devfest-2018, developer event, hackathon, coding event, programming event, ibm, mlh, major league hacking, dubai, uae, united arab emirates, DU, AE, developer festival, tech talk, workshops, coding, programming">
+    <title>DevFest 2018</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bulma-carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/termynal.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='favicon.ico')}}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico')}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico')}}" sizes="16x16">
+
+    <!--Facebook Meta Tags-->
+    <meta property="og:title" content="DevFest - 2018">
+    <meta property="og:description" content="IBM Cloud DevFest is a large, developer event happening in Dubai, UAE focused on community building and learning about IBM technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community that hosts it. DevFest is powered by a shared belief that when developers come together to exchange ideas, amazing things can happen.">
+    <meta property="og:image" content="{{ url_for('static', filename='logos/thumbnail-logo-social-media.png') }}">
+    <meta property="og:url" content="devfest.ml">
+
+    <!--Twitter Meta Tags-->
+    <meta name="twitter:title" content="DevFest - 2018">
+    <meta name="twitter:description" content="IBM Cloud DevFest is a large, developer event happening in Dubai, UAE focused on community building and learning about IBM technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community that hosts it. DevFest is powered by a shared belief that when developers come together to exchange ideas, amazing things can happen.">
+    <meta name="twitter:image" content="{{ url_for('static', filename='logos/thumbnail-logo-social-media.png') }}">
+    <meta name="twitter:card" content="Summary_Large_Image">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="section-one">
+        <img id="devfest-main" src="{{ url_for('static', filename='logos/devfest-main.png') }}">
+    </div>
+    <div id="section-two">
+        <div id="termynal" data-termynal>
+            <span data-ty="input">pip install devfest-2018</span>
+            <span data-ty="progress"></span>
+            <span data-ty>Successfully installed devfest-2018</span>
+            <span data-ty="input">python devfest-2018</span>
+            <span data-ty>IBM Cloud DevFest is a large, developer event happening in Dubai, UAE focused on community building and learning about IBM technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community that hosts it. DevFest is powered by a shared belief that when developers come together to exchange ideas, amazing things can happen.</span>
+        </div>
+    </div>
+    <div id="section-three">
+        <div class="container is-fluid">
+            <h1 class="has-text-centered">Agenda</h1>
+            <div class="card">
+                <header class="card-header card-header-override">
+                    <p class="card-header-title card-header-title-override">
+                        Day 1 - 29th June
+                    </p>
+                </header>
+            </div>
+            <br>
+            <div class="card">
+                <header class="card-header">
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">8:30 - 9:00</p>
+                            </div>
+                            <div class="column">
+                                <p>Arrival And Networking </p>
+                            </div>
+                            <div class="column">
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">REGISTRATION</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">9:00 - 9:25</p>
+                            </div>
+                            <div class="column">
+                                <p>Introduction to DevFest And Call For Code</p>
+                            </div>
+                            <div class="column">
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">OPENING SESSION</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <header class="card-header card-header-override">
+                    <p class="card-header-title card-header-title-override">Blockchain</p>
+                    <p class="header-location">Location: Training Room<br>(Astrolabs Parkside)</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">9:30 - 10:15</p>
+                            </div>
+                            <div class="column">
+                                <p>Introduction to Blockchain with Hyper-ledger</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">10:15 - 11:00</p>
+                            </div>
+                            <div class="column">
+                                <p>Hyperledger structure</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">11:10 - 12:20</p>
+                            </div>
+                            <div class="column">
+                                <p>An introduction to the IBM Blockchain Starter Plan</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">12:20 - 13:30</p>
+                            </div>
+                            <div class="column">
+                                <p>PRAYER + LUNCH</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered"></p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered"></p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">13:30 - 15:15</p>
+                            </div>
+                            <div class="column">
+                                <p>Deploy a business network on the (free) IBM Blockchain Starter Plan</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">15:30 - 16:30</p>
+                            </div>
+                            <div class="column">
+                                <p>Ethereum 101, and Introduction to Solidity</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">16:30 - 17:30</p>
+                            </div>
+                            <div class="column">
+                                <p>Introduction to Golang and why "Go" for Blockchain</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">17:45 - 18:30</p>
+                            </div>
+                            <div class="column">
+                                <p>Building a Blockchain chat application based on Proof-of-stake Blockchain</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Intermediate</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <header class="card-header card-header-override">
+                    <p class="card-header-title card-header-title-override">Data Science</p>
+                    <p class="header-location"> Location: Main Space<br>(Astrolabs Lakeside)</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">9:30 - 10:30</p>
+                            </div>
+                            <div class="column">
+                                <p>Data Science and Machine Learning Pipeline</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">10:35 - 12:15</p>
+                            </div>
+                            <div class="column">
+                                <p>Data Engineering with Pandas on Watson Studio</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">12:20 - 13:30</p>
+                            </div>
+                            <div class="column">
+                                <p>PRAYER + LUNCH</p>
+                            </div>
+                            <div class="column">
+                                <div class="has-text-centered"></div>
+                            </div>
+                            <div class="column">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">13:30 - 14:40</p>
+                            </div>
+                            <div class="column">
+                                <p>TBA</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TBA</div>
+                            </p>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">14:45 - 15:55</p>
+                            </div>
+                            <div class="column">
+                                <p>A gentle introduction to Deep Learning with Tensorflow</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Intermediate</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">16:00 - 18:10</p>
+                            </div>
+                            <div class="column">
+                                <p>Building AppleFace ID App with Tenserflow</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Intermediate</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">18:15 - 20:25</p>
+                            </div>
+                            <div class="column">
+                                <p>Data Science for the Banking Industry</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Intermediate</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="card">
+                <header class="card-header card-header-override">
+                    <p class="card-header-title card-header-title-override">
+                        Day 2 - 30th June
+                    </p>
+                </header>
+            </div>
+            <br>
+            <div class="card">
+                <header class="card-header">
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">8:30 - 9:00</p>
+                            </div>
+                            <div class="column">
+                                <p>Arrival And Networking </p>
+                            </div>
+                            <div class="column">
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">REGISTRATION</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">9:00 - 9:25</p>
+                            </div>
+                            <div class="column">
+                                <p>Introduction to DevFest And Call For Code</p>
+                            </div>
+                            <div class="column">
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">OPENING SESSION</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <header class="card-header card-header-override">
+                    <p class="card-header-title card-header-title-override">Mobile &amp; Security</p>
+                    <p class="header-location"> Location: Training Room<br>(Astrolabs Parkside)</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">9:30 - 11:10</p>
+                            </div>
+                            <div class="column">
+                                <p>Data Binding in Android</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">11:15 - 13:25</p>
+                            </div>
+                            <div class="column">
+                                <p>Introduction To RxJava</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Intermediate</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">13:30 - 14:30</p>
+                            </div>
+                            <div class="column">
+                                <p>Lunch</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered"></p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered"></p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">14:30 - 16:25</p>
+                            </div>
+                            <div class="column">
+                                <p>Introducing iOS Starter Kit and Developing an iOS App with Watson Visual Recognition</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Intermediate</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">16:30 - 17:25</p>
+                            </div>
+                            <div class="column">
+                                <p>Five top application security concerns</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">17:30 - 18:10</p>
+                            </div>
+                            <div class="column">
+                                <p>Application Security Development Tools</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">18:15 - 18:55</p>
+                            </div>
+                            <div class="column">
+                                <p>Best Practices for Application Security</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Intermediate</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <br>
+            <div class="card" id="card-web">
+                <header class="card-header card-header-override">
+                    <p class="card-header-title card-header-title-override">Web</p>
+                    <p class="header-location"> Location: Main Space<br>(Astrolabs Lakeside)</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">9:30 - 10:40</p>
+                            </div>
+                            <div class="column">
+                                <p>Introduction To NativeScript with Vue.js</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">11:45 - 12:40</p>
+                            </div>
+                            <div class="column">
+                                <p>Building a Hybrid App with NativeScript and Vue.js using Watson API's and IBM Cloud DB's</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">12:45 - 13:40</p>
+                            </div>
+                            <div class="column">
+                                <p>Introduction To NodeRED</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">13:30 - 14:30</p>
+                            </div>
+                            <div class="column">
+                                <p>Lunch</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered"></p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered"></p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">14:30 - 15:40</p>
+                            </div>
+                            <div class="column">
+                                <p>Application Prototyping Using NodeRED</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <header class="card-header card-header-override">
+                    <p class="card-header-title card-header-title-override">DevOps</p>
+                    <p class="header-location"> Location: Main Space<br>(Astrolabs Lakeside)</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">15:45 - 16:55</p>
+                            </div>
+                            <div class="column">
+                                <p>Enter the world of containerization with Docker</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Beginner</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">17:00 - 18:10</p>
+                            </div>
+                            <div class="column">
+                                <p>Kubernetes in Action</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Intermediate</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">TECH TALK</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="has-text-centered">18:10 - 20:25</p>
+                            </div>
+                            <div class="column">
+                                <p>Developing and deploying a Microservices architecture application on IBM Cloud</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">Intermediate</p>
+                            </div>
+                            <div class="column">
+                                <p class="has-text-centered">CODE LABS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-five">
+        <div class="container is-fluid">
+            <h1 class="has-text-centered">Speakers</h1>
+            <div class="columns">
+
+                <div class="column">
+                    <a href="https://developer.ibm.com/code/community/advocates/areej.essa" target="_blank"><img class="speaker-images" src="{{ url_for('static', filename='speakers/Areej_Essa.JPG') }}"></a>
+                    <br>
+                    <p class="has-text-centered"><strong>Areej Essa</strong></p>
+                    <p class="has-text-centered speaker-designation"><em>IBM Cloud Developer Advocate</em></p>
+                </div>
+                <div class="column">
+                    <a href="https://developer.ibm.com/code/community/advocates/arjun.nedungadi1" target="_blank"><img class="speaker-images" src="{{ url_for('static', filename='speakers/Arjun_Nedungadi.jpg') }}"></a>
+                    <br>
+                    <p class="has-text-centered"><strong>Arjun Nedungadi</strong></p>
+                    <p class="has-text-centered speaker-designation"><em>IBM Cloud Developer Advocate</em></p>
+                </div>
+                <div class="column">
+                    <a href="https://developer.ibm.com/code/community/advocates/alexander.al.basosi" target="_blank"><img class="speaker-images" src="{{ url_for('static', filename='speakers/Alexander_Al_Basosi.jpg') }}"></a>
+                    <br>
+                    <p class="has-text-centered"><strong>Alexander Al Basosi</strong></p>
+                    <p class="has-text-centered speaker-designation"><em>IBM Cloud Developer Advocate</em></p>
+                </div>
+                <div class="column">
+                    <a href="https://developer.ibm.com/code/community/advocates/heba.elshimy1" target="_blank"><img class="speaker-images" src="{{ url_for('static', filename='speakers/Heba_Al_Eshimy.JPG') }}"></a>
+                    <br>
+                    <p class="has-text-centered"><strong>Heba Al Eshimy</strong></p>
+                    <p class="has-text-centered speaker-designation"><em>IBM Cloud Developer Advocate</em></p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <a href="https://developer.ibm.com/code/community/advocates/kunal.malhotra1" target="_blank"><img class="speaker-images" src="{{ url_for('static', filename='speakers/Kunal_Malhotra.JPG') }}"></a>
+                    <br>
+                    <p class="has-text-centered"><strong>Kunal Malhotra</strong></p>
+                    <p class="has-text-centered speaker-designation"><em>IBM Cloud Developer Advocate</em></p>
+                </div>
+                <div class="column">
+                    <a href="https://developer.ibm.com/code/community/advocates/mahitab.hassan" target="_blank"><img class="speaker-images" src="{{ url_for('static', filename='speakers/Mahitab_Hasan.png') }}"></a>
+                    <br>
+                    <p class="has-text-centered"><strong>Mahitab Hassan</strong></p>
+                    <p class="has-text-centered speaker-designation"><em>IBM Cloud Developer Advocate</em></p>
+                </div>
+                <div class="column">
+                    <a href="https://developer.ibm.com/code/community/advocates/mehak.manwani" target="_blank"><img class="speaker-images" src="{{ url_for('static', filename='speakers/Mehak_Manwani.jpeg') }}"></a>
+                    <br>
+                    <p class="has-text-centered"><strong>Mehak Manwani</strong></p>
+                    <p class="has-text-centered speaker-designation"><em>IBM Cloud Developer Advocate</em></p>
+                </div>
+                <div class="column">
+                    <a href="https://developer.ibm.com/code/community/advocates/saif.rehman1" target="_blank"><img class="speaker-images" src="{{ url_for('static', filename='speakers/Saif_Rehman.jpeg') }}"></a>
+                    <br>
+                    <p class="has-text-centered"><strong>Saif Rehman</strong></p>
+                    <p class="has-text-centered speaker-designation"><em>IBM Cloud Developer Advocate</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="section-four">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.736345667755!2d55.14504231541405!3d25.076923842722554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cad97a03f91%3A0x9cee6adf07ebed17!2sAstroLabs+Dubai!5e0!3m2!1sen!2suk!4v1527764153582" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div id="section-seven">
+        <div class="container">
+            <div class="columns">
+                <div class="column" id="section-seven-left">
+                    <h1>Register</h1>
+                    <h1>And Join Us</h1>
+                    <h1>For A Weekend Full Of Code</h1>
+                </div>
+                <div class="column" style="padding: 130px 0;">
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="full-name" class="input" type="text" placeholder="Full Name" value="">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="email-address" class="input" type="email" placeholder="Email Address" value="">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Which Track Do You Prefer</label>
+                        <div class="control">
+                            <label class="checkbox"><input name="selector[]" type="checkbox" class="track-checkbox" value="blockchain">Blockchain</label>
+                            <label class="checkbox"><input name="selector[]" type="checkbox" class="track-checkbox" value="datascience">Data Science</label>
+                            <label class="checkbox"><input name="selector[]" type="checkbox" class="track-checkbox" value="mobile&amp;security">Mobile &amp; Security</label>
+                            <label class="checkbox"><input name="selector[]" type="checkbox" class="track-checkbox" value="devops">DevOps</label>
+                            <label class="checkbox"><input name="selector[]" type="checkbox" class="track-checkbox" value="web">Web</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Programming Language You Prefer</label>
+                        <div class="control">
+                            <div class="select">
+                                <select id="language">
+                                    <option value="Select">Select</option>
+                                    <option value="Javascript">Javascript</option>
+                                    <option value="Java">Java</option>
+                                    <option value="Python">Python</option>
+                                    <option value="Ruby">Ruby</option>
+                                    <option value="Go">Go</option>
+                                    <option value="C#">C#</option>
+                                    <option value="Swift">Swift</option>
+                                    <option value="Other">Other</option>
+                                </select>
+
+                            </div>
+                            <input id="other" class="input" type="text" placeholder="Programming Language" value="" style="width:50%">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">If you would like us to confim your attendance before the event, please enter your mobile number below</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="mobile-number" class="input" type="text" placeholder="+971 50 123 4567" value="">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-mobile"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input id="disclaimer" type="checkbox" class="track-checkbox">I agree to receive relevant updates regarding this event.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button class="button is-link" id="register-user">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section-six">
+        <br>
+        <br>
+        <h1 class="has-text-centered">Sponsors And Partners</h1>
+        <div class="container">
+            <br>
+            <br>
+            <div class="columns">
+                <div class="column">
+                	<a href="http://developer.ibm.com/code/" target="_blank">
+                    <img id="ibm-logo" src="{{ url_for('static', filename='logos/ibmneg_white.png') }}">
+                </div>
+                <div class="column">
+                	<a href="https://mlh.io/" target="_blank">
+                    <img id="mlh-logo" src="{{ url_for('static', filename='logos/mlh-logo-color.png') }}">
+                </div>
+            </div>
+            <br>
+            <br>
+            <a href="https://astrolabs.com/" target="_blank">
+            <img id="astrolabs-logo" src="{{ url_for('static', filename='logos/astrolab-logo.png') }}">
+            <br>
+            <br>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/termynal.min.js') }}" data-termynal-container="#termynal"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bulma-carousel.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/register.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/other.js') }}"></script>
+</body>
+
+</html>
