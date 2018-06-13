@@ -18,6 +18,8 @@ $(document).ready(function(){
         }
 
         var mobilenumber = $('#mobile-number').val();
+        var mobno = mobilenumber.replace(/[^\d]/g, '');
+        var a = (mobno.length >=7 && mobno.length <=17);
 
         var disclaimer = $('#disclaimer').val();
 
@@ -33,6 +35,9 @@ $(document).ready(function(){
             }
             else if (language === "Select"){
                 alert("Kindly select your programming language of preference");
+            }
+            else if (!(mobno.length==0 || mobno.length >=7 && mobno.length <=17)){
+                 alert("Please enter a valid mobile number or leave the text field empty");
             }
             else if ($('#disclaimer:checkbox:checked').length === 0){
                 alert("You need to agree to receiving event related updates to register");
