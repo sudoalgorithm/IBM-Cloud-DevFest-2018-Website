@@ -1,5 +1,5 @@
 ---
 applications:
 - name: DevFest2018
-  memory: 128M
+  memory: 256M
   buildpack: python_buildpack
