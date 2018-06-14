@@ -1,5 +1,3 @@
-var Typed = require(typed.min.js)
-
 particlesJS.load('particles-js','/static/assets/particlesjs-config.json', function(){
     console.log('callback - particles.js config loaded');
 })
