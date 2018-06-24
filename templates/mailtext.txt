@@ -1,6 +1,9 @@
 See you at IBM Cloud DevFest 2018
 IBM Cloud - Dubai
 
+Before the event, please make sure to create an IBM Cloud account via http://ibm.biz/devfest and select "United States" as the "Country or Region." This is very important in order for you to be able to successfully follow along during the code labs.
+
+
 Invite a friend
 Simply forward this email to a friend and have them join the event (www.devfest.ml/).
 
