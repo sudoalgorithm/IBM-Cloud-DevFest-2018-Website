@@ -1,4 +1,4 @@
-#!/Users/kunalmalhotra/Desktop/DevFestWeb/venv/bin/python
+#!/Users/kunalmalhotra/Desktop/IBM-Cloud-DevFest-2018-Website/venv/bin/python
 
 import sys
 import getopt
