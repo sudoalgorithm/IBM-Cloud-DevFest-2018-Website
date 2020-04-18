@@ -16,7 +16,7 @@ mail = Mail(app)
 db_name = 'devfestregistration'
 client = None
 db = None
-
+'''
 if 'VCAP_SERVICES' in os.environ:
     vcap = json.loads(os.getenv('VCAP_SERVICES'))
     print('Found VCAP_SERVICES')
@@ -37,7 +37,7 @@ elif os.path.isfile('vcap-local.json'):
         url = 'https://' + creds['host']
         client = Cloudant(user, password, url=url, connect=True)
         db = client.create_database(db_name, throw_on_exists=False)
-
+'''
 @app.route('/')
 @app.route('/index')
 def index():
